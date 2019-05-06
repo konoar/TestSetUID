@@ -35,7 +35,7 @@ clean:
 		mkdir $(BINDIR);			\
 	fi
 	@-rm -f $(TARGET)
-	@-rm -f ./obj/*.o
+	@-rm -f $(OBJDIR)*.o
 
 $(TARGET): $(OBJDIR)Main.o
 	gcc -o $(TARGET) $^ $(LDFLAGS)
