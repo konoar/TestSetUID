@@ -5,7 +5,7 @@
 int main (void)
 {
 
-	printf ("uid: %d\n", geteuid());
+	printf("uid: %d\n", geteuid());
 
 	FILE *fp = fopen("./data.txt", "w"); {
 
